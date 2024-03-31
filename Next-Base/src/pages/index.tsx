@@ -51,9 +51,15 @@ export default function Landing() {
         <div className="px-4 pb-4 flex flex-col justify-center items-center">
           <div className="text-4xl flex flex-row font-bold mb-4">
             <div className="bx bx-rocket animate-wiggle text-black mx-1" />{" "}
-            Welcome to Diced Digital
+            Welcome to Hairify!
           </div>
           {/* <Button onClick={goToNewBoard}> */}
+          <form>
+            <input type="file" />
+            <Button onClick={() => console.log("Upload clicked")}>
+              Upload Image
+            </Button>
+          </form>
           <Button onClick={() => router.push("/signup")}>
             Get Started
             <i className="bx bx-right-arrow-alt ml-1" />
